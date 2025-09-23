@@ -1,4 +1,13 @@
 
+.header {
+    height: 100vh;
+    background: linear-gradient(278.54deg, rgba(0, 0, 0, 0) 3.18%, rgba(0, 0, 0, 0.9) 90.03%), url("../../img/fond.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* STYLE POUR MENU */
 
     .menu{
@@ -73,18 +82,6 @@
 
 
 /* STYLE POUR LA BARRE A GAUCHE AVEC LES ICON */
-
-    .header {
-        height: 100vh;
-        background: linear-gradient(278.54deg, rgba(0, 0, 0, 0) 3.18%, rgba(0, 0, 0, 0.9) 90.03%), url("../../img/fond.jpg");
-
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-
-
     .vertical-gauche {
         width: 60px;
         height: 100%; 
@@ -189,7 +186,7 @@
     .carousel-container {
         position: absolute;
         top: 60%;
-        right: 20px;
+        right: 0px;
         width: 450px;
         display: flex;
         align-items: center;

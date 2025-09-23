@@ -1,0 +1,25 @@
+.apropos {
+    height: 85vh;
+    background: white;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Mulish;
+}
+.propos{
+    scale: 0.80;
+}
+.h {
+    height: 70vh;
+}
+.bg-red {
+    background-color: rgba(255, 0, 0, 0); /* juste pour visualiser */
+}
+.pe-extra {
+    padding-right: 10rem; /* ou plus selon ton besoin */
+}
+.custom-list li::marker {
+    color: #007bff; /* bleu Bootstrap */
+    font-size: 1.3em; /* un peu plus grand */
+}
