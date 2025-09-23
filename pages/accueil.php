@@ -80,7 +80,7 @@
 
     <!-- CORP DE LA PAGE -->
 
-    <div class="apropos d-flex align-items-center pe-5" id="apropos" style="gap: 2rem;">
+    <div class="apropos d-flex align-items-center" id="apropos" style="gap: 2rem;">
         <div class="propos col-7 h bg-red ms-auto d-flex flex-column justify-content-center align-items-start text-black p-5" style="height: 300px;">
             <h1>Le confort et la sérénité d’un </h1>
             <h1 class="fw-bold pb-3">appartement privé</h1>
@@ -102,14 +102,21 @@
         </div>
 
         <div class="col-4 h bg-red me-0">
-            <!-- Contenu de la colonne droite -->
+            <div class="slider-wrapper">
+                <div class="slider-track d-flex align-items-center justify-content-center pt-4">
+                    <?php foreach($carouselImagesP as $index => $image): ?>
+                        <img 
+                            src="<?= $image['src'] ?>" 
+                            alt="<?= $image['alt'] ?>" 
+                            class="slider-img <?= $index === 0 ? 'is-active' : '' ?>"
+                        >
+                    <?php endforeach; ?>
+                </div>
+                <button class="slider-next btn-circle">></button>
+            </div>
         </div>
     </div>
-
-
-
-
-    <script src="assets/js/carousel_header.js"></script>
-    <script src="assets/js/carousel_apropos.js"></script>
+    <!-- <script src="assets/js/carousel_header.js" defer></script> -->
+    <script src="assets/js/carousel.js" defer></script>
 </body>
 </html>

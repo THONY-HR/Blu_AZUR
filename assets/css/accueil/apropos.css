@@ -14,7 +14,7 @@
     height: 70vh;
 }
 .bg-red {
-    background-color: rgba(255, 0, 0, 0); /* juste pour visualiser */
+    background-color: rgba(237, 9, 9, 0.008); /* juste pour visualiser */
 }
 .pe-extra {
     padding-right: 10rem; /* ou plus selon ton besoin */
@@ -22,4 +22,64 @@
 .custom-list li::marker {
     color: #007bff; /* bleu Bootstrap */
     font-size: 1.3em; /* un peu plus grand */
+}
+
+
+/* CAROUSEL */
+
+/* Nouveau CAROUSEL */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.slider-track {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.slider-img {
+    width: 250px;
+    height: 430px; 
+    object-fit: cover;
+    margin-right: 2rem; 
+    flex-shrink: 0;
+    border-radius: 20px; 
+    opacity: 0.7;
+    transition: all 0.4s ease;
+    transform: scale(1);
+}
+
+.slider-img.is-active {
+    width: 350px; 
+    height: 500px;
+    opacity: 1;
+    border-radius: 20px;
+}
+
+.slider-next {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.0);
+    color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 25;
+    scale: 0.7;
 }

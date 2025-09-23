@@ -39,4 +39,15 @@
         ]
     ];
 
-                                                                // HEADER DATA
+                                                                // APROPOS DATA
+
+    $carouselImagesP = [
+        [
+            "src" => "assets/img/apropos1.png",
+            "alt" => "SALON "
+        ],
+        [
+            "src" => "assets/img/apropos2.png",
+            "alt" => "Cuisine"
+        ]
+    ];
