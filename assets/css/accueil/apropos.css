@@ -10,6 +10,9 @@
 .propos{
     scale: 0.80;
 }
+.propos h1{
+    font-size: 3rem;
+}
 .h {
     height: 70vh;
 }
@@ -47,7 +50,7 @@
 
 .slider-img {
     width: 250px;
-    height: 430px; 
+    height: 400px; 
     object-fit: cover;
     margin-right: 2rem; 
     flex-shrink: 0;
@@ -59,7 +62,7 @@
 
 .slider-img.is-active {
     width: 350px; 
-    height: 500px;
+    height: 470px;
     opacity: 1;
     border-radius: 20px;
 }
@@ -72,9 +75,9 @@
     width: 50px;
     height: 50px;
     background-color: rgba(255, 255, 255, 0.0);
-    color: #ffffff;
+    color: #bebcbc;
     border-radius: 50%;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #bebcbc;
     font-size: 24px;
     display: flex;
     justify-content: center;

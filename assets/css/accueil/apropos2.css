@@ -1,0 +1,9 @@
+.apropos2 {
+    height: 85vh;
+    background-image: url("../../img/fond-apropos2.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Mulish;
+}

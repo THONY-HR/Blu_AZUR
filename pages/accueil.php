@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="assets/css/accueil/header.css">
     <link rel="stylesheet" href="assets/css/accueil/apropos.css">
+    <link rel="stylesheet" href="assets/css/accueil/apropos2.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Blu Azur</title>
     <style>
@@ -82,28 +85,23 @@
 
     <div class="apropos d-flex align-items-center" id="apropos" style="gap: 2rem;">
         <div class="propos col-7 h bg-red ms-auto d-flex flex-column justify-content-center align-items-start text-black p-5" style="height: 300px;">
-            <h1>Le confort et la sérénité d’un </h1>
-            <h1 class="fw-bold pb-3">appartement privé</h1>
-            <p class="pe-extra">
-                Blu Azur vous propose des appartements élégants et spacieux, conçus pour accueillir de 2 à 6 personnes. Offrant un cadre confortable et moderne, ils sont parfaits pour une escapade détente ou un séjour prolongé.
-            </p>
+            <h1><?= $aproposContent['titre1'] ?></h1>
+            <h1 class="fw-bold pb-3"><?= $aproposContent['titre2'] ?></h1>
+            <p class="pe-extra"><?= $aproposContent['description'] ?></p>
             <div class="pt-4">
-                <h4>Les inclusions:</h4>
+                <h4><?= $aproposContent['inclusionsTitre'] ?></h4>
                 <ul class="pe-extra custom-list">
-                    <li>Stationnement privé</li>
-                    <li>Piscine extérieure avec chaises longues</li>
-                    <li>Linge de lit et serviettes</li>
-                    <li>Télévision, téléphone et Wi-Fi (accès au salon)</li>
-                    <li>Réfrigérateur, cuisinière, lave-vaisselle, vaisselle</li>
-                    <li>Kit bébé: comprend un lit parapluie avec un vrai matelas et une chaise haute</li>
-                    <li>Autres commodités en prêt à la réception: jeux de société, livres, raquettes et balles de ping-pong, sèche-cheveux, fer et planche à repasser, adaptateur pour les prises étrangères et cache-prises pour les enfants.</li>
+                    <?php foreach($aproposContent['inclusions'] as $item): ?>
+                        <li><?= $item ?></li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </div>
 
+
         <div class="col-4 h bg-red me-0">
             <div class="slider-wrapper">
-                <div class="slider-track d-flex align-items-center justify-content-center pt-4">
+                <div class="slider-track d-flex align-items-center justify-content-center pt-5">
                     <?php foreach($carouselImagesP as $index => $image): ?>
                         <img 
                             src="<?= $image['src'] ?>" 
@@ -115,6 +113,9 @@
                 <button class="slider-next btn-circle">></button>
             </div>
         </div>
+    </div>
+    <div class="apropos2">
+
     </div>
     <!-- <script src="assets/js/carousel_header.js" defer></script> -->
     <script src="assets/js/carousel.js" defer></script>
