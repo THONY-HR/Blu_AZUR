@@ -1,0 +1,67 @@
+<?php include 'assets/data.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/accueil/header.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Blu Azur</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Mulish;
+            letter-spacing: 0%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="menu">
+            <div class="d-flex justify-content-between align-items-center px-4 py-3 header-menu">
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="logo" style="height: 50px;">
+                </div>
+                <ul class="d-flex gap-5 list-unstyled mb-0 menu-items">
+                    <?php foreach ($menuItems as $item): ?>
+                        <li><a href="<?= $item['href'] ?>"><?= $item['label'] ?></a></li>
+                    <?php endforeach; ?>
+                    <li>
+                        <div class="menu-hamburger d-flex flex-column justify-content-between" style="height: 20px;">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Trait horizontal avec indicateur -->
+            <div class="trait-menu-container">
+                <hr class="trait-menu">
+                <span class="indicator"></span>
+            </div>
+        </div>
+
+        <div class="col-blue vertical-gauche d-flex flex-column justify-content-end align-items-center">
+            <?php foreach ($socialIcons as $icon): ?>
+                <img src="<?= $icon['src'] ?>" alt="<?= $icon['alt'] ?>" class="<?= $icon['class'] ?>">
+            <?php endforeach; ?>
+        </div>
+
+        <div class="contenu position-absolute text-start">
+            <h1 class="fw-bold"><?= $heroContent['title1'] ?></h1>
+            <h1><?= $heroContent['title2'] ?></h1>
+            <p class="texte-description"><?= $heroContent['description'] ?></p>
+
+            <button class="btn-reservation">
+                <?= $heroContent['button']['text'] ?>
+                <span class="btn-circle"><?= $heroContent['button']['circle'] ?></span>
+            </button>
+        </div>
+
+    </div>
+</body>
+</html>

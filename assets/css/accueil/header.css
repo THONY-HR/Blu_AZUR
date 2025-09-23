@@ -1,0 +1,186 @@
+
+/* STYLE POUR MENU */
+
+    .menu{
+        scale: 0.85;
+    }
+    .header-menu {
+        position: relative;
+        background: transparent;
+    }
+
+    .menu-items li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+    }
+
+
+    /* 3 Traits */
+    .menu-hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+    }
+
+    .menu-hamburger span {
+        border-radius: 2rem;
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+    }
+
+    .menu-hamburger span:nth-child(3) {
+        width: 18px;
+        align-self: flex-end;
+    }
+
+
+
+    /* Trait horizontal sous le menu */
+    .trait-menu {
+        border: none;
+        height: 2px;
+        background-color: white;
+        margin: 0 1rem;
+    }
+
+    .trait-menu-container {
+        position: relative;
+        margin: 0 1rem;
+    }
+
+    .trait-menu {
+        border: none;
+        height: 2px;
+        background-color: white;
+        margin: 0;
+    }
+
+    /* Indicateur de section */
+    .indicator {
+        position: absolute;
+        bottom: -3px;
+        left: 128vh;
+        height: 4px;
+        width: 7%;
+        background-color: white;
+        transition: left 0.3s ease;
+    }
+
+
+
+/* STYLE POUR LA BARRE A GAUCHE AVEC LES ICON */
+
+    .header {
+        height: 100vh;
+        background: linear-gradient(278.54deg, rgba(0, 0, 0, 0) 3.18%, rgba(0, 0, 0, 0.9) 90.03%), url("../../img/fond.jpg");
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+
+    .vertical-gauche {
+        width: 60px;
+        height: 100%; 
+        background-color: rgba(64, 151, 255, 0.35);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    .vertical-gauche img {
+        width: 21px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s;
+        opacity: 1;
+    }
+
+    .vertical-gauche img.fb-icon {
+        width: 10px;
+    }
+
+    .vertical-gauche img:hover {
+        transform: scale(1.2);
+    }
+
+
+/* CONTENU */
+
+
+.contenu {
+    position: absolute;
+    bottom: 10rem;
+    left: 8.5rem;
+    z-index: 20;
+    max-width: 400px;
+    scale: 0.9;
+}
+
+.contenu h1 {
+    color: white;
+    margin: 0;
+    font-size: 3rem;
+}
+
+
+.texte-description {
+    margin-top: 1rem;
+    font-size: 14.5px;
+    letter-spacing: 0%;
+    text-align: justify;
+    padding-bottom: 4rem;
+    font-weight: 80;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-reservation {
+    position: relative;      
+    display: inline-flex;    
+    align-items: center;
+    justify-content: space-between; 
+    width: 400px;
+    height: 3.2rem;
+    padding: 0 25px;
+    background: transparent;
+    color: #FFFFFF;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.btn-reservation .btn-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;             /* taille du cercle */
+    height: 50px;
+    border: 1.7px solid #FFFFFF;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    flex-shrink: 0;
+    scale: 0.5;
+}
+
