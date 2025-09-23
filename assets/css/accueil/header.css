@@ -122,65 +122,126 @@
 /* CONTENU */
 
 
-.contenu {
-    position: absolute;
-    bottom: 10rem;
-    left: 8.5rem;
-    z-index: 20;
-    max-width: 400px;
-    scale: 0.9;
-}
+    .contenu {
+        position: absolute;
+        bottom: 10rem;
+        left: 8.5rem;
+        z-index: 20;
+        max-width: 400px;
+        scale: 0.9;
+    }
 
-.contenu h1 {
-    color: white;
-    margin: 0;
-    font-size: 3rem;
-}
+    .contenu h1 {
+        color: white;
+        margin: 0;
+        font-size: 3rem;
+    }
 
 
-.texte-description {
-    margin-top: 1rem;
-    font-size: 14.5px;
-    letter-spacing: 0%;
-    text-align: justify;
-    padding-bottom: 4rem;
-    font-weight: 80;
+    .texte-description {
+        margin-top: 1rem;
+        font-size: 14.5px;
+        letter-spacing: 0%;
+        text-align: justify;
+        padding-bottom: 4rem;
+        font-weight: 80;
 
-    color: rgba(255, 255, 255, 0.7);
-}
+        color: rgba(255, 255, 255, 0.7);
+    }
 
-.btn-reservation {
-    position: relative;      
-    display: inline-flex;    
-    align-items: center;
-    justify-content: space-between; 
-    width: 400px;
-    height: 3.2rem;
-    padding: 0 25px;
-    background: transparent;
-    color: #FFFFFF;
-    font-family: 'Mulish', sans-serif;
-    font-weight: 100;
-    font-size: 14px;
-    border: 1.5px solid #FFFFFF;
-    border-radius: 30px;
-    cursor: pointer;
-    overflow: hidden;
-}
+    .btn-reservation {
+        position: relative;      
+        display: inline-flex;    
+        align-items: center;
+        justify-content: space-between; 
+        width: 400px;
+        height: 3.2rem;
+        padding: 0 25px;
+        background: transparent;
+        color: #FFFFFF;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+        border: 1.5px solid #FFFFFF;
+        border-radius: 30px;
+        cursor: pointer;
+        overflow: hidden;
+    }
 
-.btn-reservation .btn-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;             /* taille du cercle */
-    height: 50px;
-    border: 1.7px solid #FFFFFF;
-    border-radius: 50%;
-    font-weight: bold;
-    font-size: 24px;
-    color: #FFFFFF;
-    margin-left: 20px;
-    flex-shrink: 0;
-    scale: 0.5;
-}
+    .btn-reservation .btn-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 1.7px solid #FFFFFF;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 24px;
+        color: #FFFFFF;
+        margin-left: 20px;
+        flex-shrink: 0;
+        scale: 0.5;
+    }
+
+/* CAROUSEL */
+
+    .carousel-container {
+        position: absolute;
+        top: 60%;
+        right: 20px;
+        width: 450px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        z-index: 20;
+    }
+
+    .carousel {
+        display: flex;
+        align-items: center; 
+        transition: transform 0.5s ease;
+        
+    }
+
+    .carousel img {
+        width: 200px;
+        height: 130px; 
+        object-fit: cover;
+        margin-right: 2rem; 
+        flex-shrink: 0;
+        border-radius: 21px; 
+        opacity: 0.9;
+        transition: all 0.4s ease;
+        transform: scale(1);
+    }
+
+    /* Image active plus grande */
+    .carousel img.active {
+        width: 300px; 
+        height: 200px;
+        opacity: 1;
+        border-radius: 21px;
+    }
+
+    .carousel-next {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.0);
+        color: #ffffff;
+        border-radius: 50%;
+        border: 2px solid #FFFFFF;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 25;
+        scale: 0.7;
+    }
+
 

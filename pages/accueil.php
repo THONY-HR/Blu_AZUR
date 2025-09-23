@@ -61,7 +61,22 @@
                 <span class="btn-circle"><?= $heroContent['button']['circle'] ?></span>
             </button>
         </div>
+        
+        <div class="carousel-container">
+            <div class="carousel">
+                <?php foreach($carouselImages as $index => $image): ?>
+                    <img 
+                        src="<?= $image['src'] ?>" 
+                        alt="<?= $image['alt'] ?>" 
+                        class="<?= $index === 0 ? 'active' : '' ?>"
+                    >
+                <?php endforeach; ?>
+            </div>
+            <button class="carousel-next btn-circle">></button>
+        </div>
+
 
     </div>
+    <script src="assets/js/carousel.js"></script>
 </body>
 </html>

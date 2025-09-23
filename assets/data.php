@@ -23,6 +23,19 @@ $heroContent = [
     des plages de sable fin et du centre-ville animé. Profitez d'un séjour alliant confort, sérénité et élégance au cœur de la Riviera française !",
     'button' => [
         'text' => 'Réservez dès maintenant votre séjour !',
-        'circle' => '>'
+        'circle' => '>',
+        'href' => '#reserve'
     ]
 ];
+
+$carouselImages = [
+    [
+        "src" => "assets/img/piscine1.png",
+        "alt" => "Piscine 1"
+    ],
+    [
+        "src" => "assets/img/piscine2.png",
+        "alt" => "Piscine 2"
+    ]
+];
+
