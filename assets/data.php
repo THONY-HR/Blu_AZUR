@@ -126,3 +126,32 @@
             'href' => '#reserve'
         ]
     ];
+
+    $imageLocalisation = [
+        [
+            'img' => 'assets/img/map.png',
+            'alt' => 'Map'
+        ],
+        [
+            'img' => 'assets/img/carte.png',
+            'alt' => 'Carte'
+        ],
+        [
+            'img' => '<path d="M49.4998 140.083C47.8762 140.083 46.4846 139.619 45.3248 138.692C44.1651 137.764 43.2953 136.546 42.7155 135.039C40.512 128.544 37.7287 122.456 34.3655 116.773C31.1182 111.09 26.5373 104.422 20.6228 96.7677C14.7082 89.1136 9.89532 81.8073 6.18421 74.849C2.58907 67.8906 0.791504 59.4827 0.791504 49.625C0.791504 36.0563 5.48838 24.575 14.8821 15.1813C24.3918 5.67155 35.9311 0.916687 49.4998 0.916687C63.0686 0.916687 74.5498 5.67155 83.9436 15.1813C93.4533 24.575 98.2082 36.0563 98.2082 49.625C98.2082 60.1785 96.1786 68.9924 92.1196 76.0667C88.1766 83.025 83.5957 89.9254 78.3769 96.7677C72.1144 105.118 67.3596 112.076 64.1123 117.643C60.9811 123.093 58.3717 128.892 56.2842 135.039C55.7043 136.662 54.7766 137.938 53.5009 138.866C52.3412 139.677 51.0075 140.083 49.4998 140.083ZM49.4998 67.0209C54.3707 67.0209 58.4877 65.3393 61.8509 61.9761C65.2141 58.6129 66.8957 54.4959 66.8957 49.625C66.8957 44.7542 65.2141 40.6372 61.8509 37.274C58.4877 33.9108 54.3707 32.2292 49.4998 32.2292C44.629 32.2292 40.512 33.9108 37.1488 37.274C33.7856 40.6372 32.104 44.7542 32.104 49.625C32.104 54.4959 33.7856 58.6129 37.1488 61.9761C40.512 65.3393 44.629 67.0209 49.4998 67.0209Z" fill="#FF4A4A"/>',
+            'alt' => 'svg Localisation'
+        ]
+    ];
+
+    $localisation = [
+        "image" => [
+            "src" => "assets/img/grp-localisation2.png",
+            "alt" => "Groupe image de paysage",
+        ],
+        "titres" => [
+            "titre1" => "Un point de départ idéal",
+            "titre2" => "pour <span class=\"fw-bold\">découvrir la Côte d'Azur !</span>"
+        ],
+        "description" => "Entre mer et montagne, Saint-Raphaël est une destination idéale pour les amateurs de plein air et de découvertes. Randonnées dans le Massif de l’Estérel, sports nautiques sur les eaux cristallines de la Méditerranée, balades en bateau vers les îles de Lérins ou encore golf et cyclisme sur des parcours panoramiques, chaque journée offre son lot d’aventures. Entre marchés provençaux, villages perchés et animations locales, l’art de vivre azuréen se dévoile à chaque instant, faisant de Saint-Raphaël un lieu vibrant et inoubliable."
+    ];
+
+

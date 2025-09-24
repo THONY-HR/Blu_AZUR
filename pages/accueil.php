@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/accueil/apropos.css">
     <link rel="stylesheet" href="assets/css/accueil/activites.css">
     <link rel="stylesheet" href="assets/css/accueil/localisations.css">
+    <link rel="stylesheet" href="assets/css/accueil/autreInfos.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Blu Azur</title>
@@ -146,18 +147,54 @@
         <div class="col-4 cover d-flex align-items-center justify-content-center px-5 position-relative" style="height: 80%;">
             
             <!-- Map placée au-dessus, indépendante du cadre -->
-            <img class="map" src="assets/img/map.png" alt="Map">
+            <img class="map" src="<?php echo $imageLocalisation[0]['img']; ?>" alt="<?php echo $imageLocalisation[0]['alt']; ?>">
             <svg class="svg position-absolute" width="99" height="141" viewBox="0 0 99 141" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M49.4998 140.083C47.8762 140.083 46.4846 139.619 45.3248 138.692C44.1651 137.764 43.2953 136.546 42.7155 135.039C40.512 128.544 37.7287 122.456 34.3655 116.773C31.1182 111.09 26.5373 104.422 20.6228 96.7677C14.7082 89.1136 9.89532 81.8073 6.18421 74.849C2.58907 67.8906 0.791504 59.4827 0.791504 49.625C0.791504 36.0563 5.48838 24.575 14.8821 15.1813C24.3918 5.67155 35.9311 0.916687 49.4998 0.916687C63.0686 0.916687 74.5498 5.67155 83.9436 15.1813C93.4533 24.575 98.2082 36.0563 98.2082 49.625C98.2082 60.1785 96.1786 68.9924 92.1196 76.0667C88.1766 83.025 83.5957 89.9254 78.3769 96.7677C72.1144 105.118 67.3596 112.076 64.1123 117.643C60.9811 123.093 58.3717 128.892 56.2842 135.039C55.7043 136.662 54.7766 137.938 53.5009 138.866C52.3412 139.677 51.0075 140.083 49.4998 140.083ZM49.4998 67.0209C54.3707 67.0209 58.4877 65.3393 61.8509 61.9761C65.2141 58.6129 66.8957 54.4959 66.8957 49.625C66.8957 44.7542 65.2141 40.6372 61.8509 37.274C58.4877 33.9108 54.3707 32.2292 49.4998 32.2292C44.629 32.2292 40.512 33.9108 37.1488 37.274C33.7856 40.6372 32.104 44.7542 32.104 49.625C32.104 54.4959 33.7856 58.6129 37.1488 61.9761C40.512 65.3393 44.629 67.0209 49.4998 67.0209Z" fill="#FF4A4A"/>
+                <?php echo $imageLocalisation[2]['img']; ?>
             </svg>
 
             <div class="col-10 cadre" style="height: 90%;">
-                <img class="carte" src="assets/img/carte.png" alt="carte">    
+                <img class="carte" src="<?php echo $imageLocalisation[1]['img']; ?>" alt="<?php echo $imageLocalisation[1]['alt']; ?>">    
             </div>
         </div>
-
     </div>
+    <div class="localisation2 d-flex gap-5 align-items-center justify-content-center text-white">
+        <div class="col-5 d-flex gap-5 align-items-center justify-content-center" style="height: 90%;">
+            <img src="<?php echo $localisation['image']['src']; ?>" 
+                alt="<?php echo $localisation['image']['alt']; ?>" 
+                style="width: 60%;">
+        </div>
 
+        <div class="local2content col-4 d-flex flex-column align-items-center justify-content-center" style="height: 90%;">
+            <div class="text-end">
+                <h2><?php echo $localisation['titres']['titre1']; ?></h2>
+                <h2><?php echo $localisation['titres']['titre2']; ?></h2>
+            </div>
+            <p class="text-justify px-4">
+                <?php echo $localisation['description']; ?>
+            </p>
+        </div>
+    </div>
+    <div class="autreInfo d-flex flex-column align-items-center justify-content-center">
+        <div class="col-8 loko d-flex justify-content-between" style="height:40%">
+            <div class="col-6 loko masquer d-flex align-items-center justify-content-center" style="height:98%">
+                <img class="img-config-up" src="assets/img/stPaulDeVence2.png" alt="ST PAUL DE VENCE 2">
+            </div>
+            <div class="col-6 loko masquer d-flex align-items-center justify-content-center" style="height:98%">
+                <img class="img-config-up" src="assets/img/laRouteNational5.png" alt="ST PAUL DE VENCE 2">
+            </div>
+        </div>
+        <div class="col-8 loko d-flex justify-content-between" style="height:50%">
+            <div class="col-4 loko masquer d-flex align-items-center justify-content-center" style="height:98%">
+                <img class="img-config-down" src="assets/img/fayanceTourettes.png" alt="ST PAUL DE VENCE 2">
+            </div>
+            <div class="col-4 loko masquer d-flex align-items-center justify-content-center" style="height:98%">
+                <img class="img-config-down" src="assets/img/portGrimaude.png" alt="ST PAUL DE VENCE 2">
+            </div>
+            <div class="col-4 loko masquer d-flex align-items-center justify-content-center" style="height:98%">
+                <img class="img-config-down" src="assets/img/capDramont2.png" alt="ST PAUL DE VENCE 2">
+            </div>
+        </div>
+    </div>
     <!-- <script src="assets/js/carousel_header.js" defer></script> -->
     <script src="assets/js/carousel.js" defer></script>
 </body>

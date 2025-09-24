@@ -1,0 +1,26 @@
+.autreInfo{
+    height: 100vh;
+    background-image: url("../../img/fond-autreinfo.png");
+    background-size: cover;
+    background-position: 30% 0%; /* 30% horizontal, 70% vertical */
+
+    background-repeat: no-repeat;
+    font-family: Mulish;
+}
+.loko {
+    /* background-color: rgba(21, 20, 20, 0.8); */
+}
+.masquer{
+    overflow: hidden;
+    position: relative;
+}
+.img-config-up{
+    scale: 0.38;
+    padding-top: 20%;
+}
+
+.img-config-down{
+    padding-top: 10%;
+    scale: 0.38;
+    margin-top: -6.1%;
+}

@@ -1,15 +1,11 @@
 .localisation {
     height: 85vh;
     background-image: url("../../img/fond-localisation.png");
-
     background-size: cover;
-    background-position: center;
+    background-position: 30% 0%; /* 30% horizontal, 70% vertical */
+
     background-repeat: no-repeat;
     font-family: Mulish;
-}
-
-.loko {
-    background-color: rgba(21, 20, 20, 0.8);
 }
 .local{
     scale: 0.75;
@@ -60,10 +56,10 @@
 }
 
 .cadre {
-    overflow: hidden;      /* masque la carte si elle dépasse */
+    overflow: hidden;
     border-radius: 24px;
     position: relative;
-    z-index: 1;            /* reste derrière la map */
+    z-index: 1;
 }
 
 .carte {
@@ -91,4 +87,23 @@
     margin-left: 25%;
     margin-top: -18%;
     z-index: 10;    
+}
+
+/* LOCALISATION PARTIE 2 */
+
+.localisation2{
+    height: 85vh;
+    background-image: url("../../img/fond-localisation2.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Mulish;
+}
+.text-justify{
+    text-align: justify;
+    font-size: 13.5px;
+}
+.local2content{
+    scale: 0.8;
 }
