@@ -42,7 +42,7 @@
                                                                 // APROPOS DATA
 
     $aproposContent = [
-        "titre1" => "Le confort et la sérénité d’un",
+        "titre1" => "Le confort et la sérénité d'un",
         "titre2" => "appartement privé",
         "description" => "Blu Azur vous propose des appartements élégants et spacieux, conçus pour accueillir de 2 à 6 personnes. Offrant un cadre confortable et moderne, ils sont parfaits pour une escapade détente ou un séjour prolongé.",
         "inclusionsTitre" => "Les inclusions:",
@@ -65,5 +65,50 @@
         [
             "src" => "assets/img/apropos2.png",
             "alt" => "Cuisine"
+        ]
+    ];
+                                                                // ACTIVITES DATA
+    $activitesContent = [
+        "titre1" => "Saint Raphaël, l'endroit parfait pour",
+        "titre2" => "vivre la Côte d'Azur",
+        "description" => "Avec ses plages dorées, ses 300 jours de soleil et ses calanques sauvages, Saint-Raphaël est une destination de rêve. Entre mer turquoise et rochers rouges de l'Estérel, elle offre un cadre idyllique pour la détente et l'aventure."
+    ];
+
+    $activites = [
+        [
+            "img" => "assets/img/swimming.png",
+            "alt" => "Swimming",
+            "texte" => "Sports nautiques, plongée, voile",
+            "class" => ""
+        ],
+        [
+            "img" => "assets/img/city.png",
+            "alt" => "City",
+            "texte" => "Randonnées et vélo dans l'Estérel",
+            "class" => ""
+        ],
+        [
+            "img" => "assets/img/casino.png",
+            "alt" => "Casino",
+            "texte" => "Casino et vie nocturne animée",
+            "class" => ""
+        ],
+        [
+            "img" => "assets/img/village.png",
+            "alt" => "Village",
+            "texte" => "Villages perchés et marchés provençaux",
+            "class" => ""
+        ],
+        [
+            "img" => "assets/img/golf.png",
+            "alt" => "Golf",
+            "texte" => "Un paradis pour les golfeurs ",
+            "class" => "retrecir"
+        ],
+        [
+            "img" => "assets/img/mountains.png",
+            "alt" => "Montagne",
+            "texte" => "Montagne et vélo de route",
+            "class" => "retrecir"
         ]
     ];

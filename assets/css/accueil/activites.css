@@ -1,0 +1,40 @@
+.activites {
+    height: 85vh;
+    background-image: url("../../img/fond-apropos2.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Mulish;
+}
+
+.loko {
+    /* background-color: rgba(21, 20, 20, 0.8); */
+}
+.activites p{
+    font-weight: 100;
+    scale: 0.9;
+    font-size: 14.3px;
+}
+.cercle{
+    height: 52.5%;
+    border-radius: 100%;
+    cursor: pointer;
+
+}
+.cadreA{
+    transition: 0.5s;
+}
+.cadreA:hover{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 20px;
+    background-color: rgba(5, 116, 213, 0.099);
+    scale: 1.1;
+}
+.cercle img{
+    scale: 0.23;
+}
+.retrecir{
+     transform: scale(0.35); /* ou ajuste la valeur selon le besoin */
+}
