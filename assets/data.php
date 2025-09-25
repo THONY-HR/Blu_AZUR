@@ -154,4 +154,58 @@
         "description" => "Entre mer et montagne, Saint-Raphaël est une destination idéale pour les amateurs de plein air et de découvertes. Randonnées dans le Massif de l’Estérel, sports nautiques sur les eaux cristallines de la Méditerranée, balades en bateau vers les îles de Lérins ou encore golf et cyclisme sur des parcours panoramiques, chaque journée offre son lot d’aventures. Entre marchés provençaux, villages perchés et animations locales, l’art de vivre azuréen se dévoile à chaque instant, faisant de Saint-Raphaël un lieu vibrant et inoubliable."
     ];
 
+                                                                // AUTRE DATA
 
+    $autreInfos = [
+        [
+            "img" => "assets/img/stPaulDeVence2.png",
+            "alt" => "ST PAUL DE VENCE 2",
+            "title1" => "Un patrimoine culturel",
+            "title2" => "d’exception",
+            "text" => "De Picasso à Cocteau, la Côte d’Azur a toujours été une terre d’inspiration pour les artistes. Musées, galeries et sites historiques jalonnent la région, offrant un voyage au cœur de l’art et de l’histoire entre Saint-Raphaël, Antibes et Saint-Paul-de-Vence.",
+            "extra" => "À voir: <a href='#'>Le Festival de Cannes, Carnaval de Nice, Fête du Citron</a>",
+            "button" => null
+        ],
+        [
+            "img" => "assets/img/laRouteNational5.png",
+            "alt" => "Route Nationale 5",
+            "title1" => "Le sport au rythme de la Méditerranée",
+            "title2" => "",
+            "text" => "Du légendaire Grand Prix de Monaco aux défis de l’Ironman, en passant par le Marathon des Alpes-Maritimes, la région vibre au rythme des grands événements sportifs. Cyclisme sur la Route des Crêtes, golf sur des parcours prestigieux et voile lors des Régates de Saint-Tropez complètent ce décor idéal pour les amateurs de sport et d’adrénaline.",
+            "extra" => "À voir: <a href='#'>Grand prix de Monaco, Ironman France - Nice, Marathon des Alpes-Maritimes, Régates de Saint-Tropez</a>",
+            "button" => null
+        ],
+        [
+            "img" => "assets/img/fayanceTourettes.png",
+            "alt" => "Fayence Tourettes",
+            "title1" => "Une destination gourmande",
+            "title2" => "et authentique",
+            "text" => "Les marchés provençaux dévoilent des saveurs du terroir, entre fromages affinés, huile d’olive et spécialités méditerranéennes. Vignerons passionnés et restaurants raffinés offrent une expérience gastronomique où tradition et créativité se rencontrent dans un cadre enchanteur.",
+            "extra" => "",
+            "button" => [
+                "label" => "Consulter la liste des meilleurs restaurants",
+                "circle" => ">"
+            ]
+        ],
+        [
+            "img" => "assets/img/portGrimaude.png",
+            "alt" => "Port Grimaude",
+            "title1" => "Des expériences inoubliables",
+            "title2" => "en famille",
+            "text" => "Entre villages pittoresques, marchés publics animés et escapades sur la route du littoral, Saint-Raphaël propose un cadre idéal pour partager des moments inoubliables. La diversité des activités en plein air fait de la région une destination prisée par les amateurs de découvertes et d’aventures en famille.",
+            "extra" => "",
+            "button" => null
+        ],
+        [
+            "img" => "assets/img/capDramont2.png",
+            "alt" => "Cap Dramont",
+            "title1" => "L’évasion en pleine nature",
+            "title2" => "",
+            "text" => "Le Massif de l’Estérel déploie ses roches rouges entre ciel et mer, offrant des panoramas spectaculaires. Randonnées, balades côtières et sentiers sauvages permettent de s’imprégner d’un environnement préservé, idéal pour une parenthèse hors du temps.",
+            "extra" => "À voir: Grand Canyon du Verdon",
+            "button" => [
+                "label" => "Consulter la liste des sentiers pédestres",
+                "circle" => ">"
+            ]
+        ],
+    ];

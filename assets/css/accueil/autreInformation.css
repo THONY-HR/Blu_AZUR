@@ -1,0 +1,39 @@
+.autreInfo{
+    height: 100vh;
+    background-size: cover;
+    background-position: 30% 0%; /* 30% horizontal, 70% vertical */
+
+    background-repeat: no-repeat;
+    font-family: Mulish;
+    scale: 0.9;
+}
+.autreInfos{
+    background-image: url("../../img/fond-autreinfo.png");
+}
+.loko {
+    /* background-color: rgba(21, 20, 20, 0.8); */
+}
+.masquer{
+    overflow: hidden;
+    position: relative;
+}
+.img-config-up{
+    scale: 0.38;
+    padding-top: 20%;
+}
+
+.img-config-down{
+    padding-top: 10%;
+    scale: 0.38;
+    margin-top: -6.1%;
+}
+.contentAutreInfo{
+    scale: 0.6;
+    font-size: 13px;
+    bottom: 0;
+    margin-bottom: -5%;
+    margin-left: -10%;
+}
+.contentAutreInfo p{
+    font-size: 14px;
+}

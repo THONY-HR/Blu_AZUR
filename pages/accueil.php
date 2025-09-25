@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/accueil/apropos.css">
     <link rel="stylesheet" href="assets/css/accueil/activites.css">
     <link rel="stylesheet" href="assets/css/accueil/localisations.css">
-    <link rel="stylesheet" href="assets/css/accueil/autreInfos.css">
+    <link rel="stylesheet" href="assets/css/accueil/autreInformation.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Blu Azur</title>
@@ -82,6 +82,8 @@
             <button class="carousel-next btn-circle">></button>
         </div>
     </div>
+
+    
     <!-- CORP DE LA PAGE -->
     <div class="apropos d-flex align-items-center" id="apropos" style="gap: 2rem;">
         <div class="propos col-7 h bg-red ms-auto d-flex flex-column justify-content-center align-items-start text-black p-5" style="height: 300px;">
@@ -174,28 +176,48 @@
             </p>
         </div>
     </div>
-    <div class="autreInfo d-flex flex-column align-items-center justify-content-center">
-        <div class="col-8 loko d-flex justify-content-between" style="height:40%">
-            <div class="col-6 loko masquer d-flex align-items-center justify-content-center" style="height:98%">
-                <img class="img-config-up" src="assets/img/stPaulDeVence2.png" alt="ST PAUL DE VENCE 2">
+    <div class="autreInfos">
+        <div class="autreInfo d-flex flex-column align-items-center justify-content-center">
+            <div class="col-8 loko d-flex justify-content-between" style="height:40%">
+                <?php foreach (array_slice($autreInfos, 0, 2) as $info): ?>
+                    <div class="col-6 loko masquer d-flex align-items-center justify-content-center position-relative" style="height:98%">
+                        <img class="img-config-up" src="<?= $info['img'] ?>" alt="<?= $info['alt'] ?>">
+                        <div class="contentAutreInfo position-absolute text-white">
+                            <h4><?= $info['title1'] ?></h4>
+                            <h4><?= $info['title2'] ?></h4>
+                            <p><?= $info['text'] ?></p>
+                            <?php if ($info['extra']): ?><p><?= $info['extra'] ?></p><?php endif; ?>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
-            <div class="col-6 loko masquer d-flex align-items-center justify-content-center" style="height:98%">
-                <img class="img-config-up" src="assets/img/laRouteNational5.png" alt="ST PAUL DE VENCE 2">
-            </div>
-        </div>
-        <div class="col-8 loko d-flex justify-content-between" style="height:50%">
-            <div class="col-4 loko masquer d-flex align-items-center justify-content-center" style="height:98%">
-                <img class="img-config-down" src="assets/img/fayanceTourettes.png" alt="ST PAUL DE VENCE 2">
-            </div>
-            <div class="col-4 loko masquer d-flex align-items-center justify-content-center" style="height:98%">
-                <img class="img-config-down" src="assets/img/portGrimaude.png" alt="ST PAUL DE VENCE 2">
-            </div>
-            <div class="col-4 loko masquer d-flex align-items-center justify-content-center" style="height:98%">
-                <img class="img-config-down" src="assets/img/capDramont2.png" alt="ST PAUL DE VENCE 2">
+
+            <div class="col-8 loko d-flex justify-content-between" style="height:50%">
+                <?php foreach (array_slice($autreInfos, 2) as $info): ?>
+                    <div class="col-4 loko masquer d-flex align-items-center justify-content-center position-relative" style="height:98%">
+                        <img class="img-config-down" src="<?= $info['img'] ?>" alt="<?= $info['alt'] ?>">
+                        <div class="contentAutreInfo position-absolute text-white">
+                            <h4><?= $info['title1'] ?></h4>
+                            <h4><?= $info['title2'] ?></h4>
+                            <p><?= $info['text'] ?></p>
+                            <?php if ($info['extra']): ?><p><?= $info['extra'] ?></p><?php endif; ?>
+                            <?php if ($info['button']): ?>
+                                <button class="btn-reservationL mt-3">
+                                    <?= $info['button']['label'] ?>
+                                    <span class="btn-circleL"><?= $info['button']['circle'] ?></span>
+                                </button>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
-    <!-- <script src="assets/js/carousel_header.js" defer></script> -->
+    <div class="reserve">
+
+    </div>
+
+
     <script src="assets/js/carousel.js" defer></script>
 </body>
 </html>
