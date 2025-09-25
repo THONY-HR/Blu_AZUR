@@ -10,9 +10,6 @@
 .autreInfos{
     background-image: url("../../img/fond-autreinfo.png");
 }
-.loko {
-    /* background-color: rgba(21, 20, 20, 0.8); */
-}
 .masquer{
     overflow: hidden;
     position: relative;

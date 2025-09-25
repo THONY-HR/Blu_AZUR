@@ -8,10 +8,10 @@
     ];
 
     $socialIcons = [
-        ['src' => 'assets/img/fb.png', 'alt' => 'Facebook', 'class' => 'fb-icon'],
-        ['src' => 'assets/img/yt.png', 'alt' => 'YouTube', 'class' => ''],
-        ['src' => 'assets/img/tw.png', 'alt' => 'Twitter', 'class' => ''],
-        ['src' => 'assets/img/ig.png', 'alt' => 'Instagram', 'class' => '']
+        ['src' => 'assets/img/fb.png', 'href' => '','alt' => 'Facebook', 'class' => 'fb-icon'],
+        ['src' => 'assets/img/yt.png', 'href' => '','alt' => 'YouTube', 'class' => ''],
+        ['src' => 'assets/img/tw.png', 'href' => '','alt' => 'Twitter', 'class' => ''],
+        ['src' => 'assets/img/ig.png', 'href' => '','alt' => 'Instagram', 'class' => '']
     ];
 
 
@@ -71,7 +71,8 @@
     $activitesContent = [
         "titre1" => "Saint Raphaël, l'endroit parfait pour",
         "titre2" => "vivre la Côte d'Azur",
-        "description" => "Avec ses plages dorées, ses 300 jours de soleil et ses calanques sauvages, Saint-Raphaël est une destination de rêve. Entre mer turquoise et rochers rouges de l'Estérel, elle offre un cadre idyllique pour la détente et l'aventure."
+        "description" => "Avec ses plages dorées, ses 300 jours de soleil et ses calanques sauvages, Saint-Raphaël est une destination de rêve. Entre mer turquoise et rochers rouges de l'Estérel, elle offre un cadre idyllique pour la détente et l'aventure.",
+        "footDesc" => "Flânez sur la Promenade des Bains, explorez les criques secrètes ou partez en mer depuis son port de plaisance. Saint-Raphaël, c'est la Côte d'Azur dans toute sa splendeur !"
     ];
 
     $activites = [
@@ -210,6 +211,7 @@
         ],
     ];
 
+                                                                // RESERVATIONS DATA
 
     $reserve = [
         "title" => "Réservations",
@@ -219,4 +221,26 @@
             "icon" => ">",   // ou une image si besoin
             "class" => "btn-config btn-reservationL"
         ]
+    ];
+
+                                                                // FOOTER DATA
+
+    $footer = [
+        "logo" => "assets/img/logo.png",
+        "contactTitle" => "Contactez-nous",
+        "contacts" => [
+            [
+                "icon" => "assets/img/email.png",
+                "text" => "info@bluazur.com"
+            ],
+            [
+                "icon" => "assets/img/call.png",
+                "text" => "+1 555 555-5555"
+            ],
+            [
+                "icon" => "assets/img/facebook.png",
+                "text" => "@ BLU Azur"
+            ]
+        ],
+        "copyright" => "© Tous droits réservés à Blu Azur"
     ];

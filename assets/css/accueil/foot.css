@@ -1,0 +1,42 @@
+.footer{
+    height: 60vh;
+    background: rgba(64, 151, 255, 1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.droit-reserve{
+    background: rgba(33, 97, 174, 1);
+    left: 0;
+}
+.loko {
+    background-color: rgba(21, 20, 20, 0.8);
+}
+.logo-footer{
+    scale: 1.1;
+}
+.footer-content {
+    left: 0;
+}
+.footer-content h4 {
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.text-contact{
+    font-weight: 800;
+    font-size: 20px;
+}
+.footer-content .contact p {
+    display: flex;
+    align-items: center;
+    margin: 13px 0; 
+}
+.footer-content .contact p img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+.footer-content .contact p span {
+    font-size: 13px;
+    color: #fff;
+}

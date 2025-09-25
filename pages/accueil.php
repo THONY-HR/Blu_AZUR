@@ -1,4 +1,5 @@
 <?php include 'assets/data.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/accueil/localisations.css">
     <link rel="stylesheet" href="assets/css/accueil/autreInformation.css">
     <link rel="stylesheet" href="assets/css/accueil/reserve.css">
+    <link rel="stylesheet" href="assets/css/accueil/foot.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Blu Azur</title>
@@ -55,7 +57,7 @@
 
         <div class="col-blue vertical-gauche d-flex flex-column justify-content-end align-items-center">
             <?php foreach ($socialIcons as $icon): ?>
-                <img src="<?= $icon['src'] ?>" alt="<?= $icon['alt'] ?>" class="<?= $icon['class'] ?>">
+                <img src="<?= $icon['src'] ?>" alt="<?= $icon['alt'] ?>" class="<?= $icon['class'] ?>" onclick="window.location.href='<?= $icon['href'] ?>'">
             <?php endforeach; ?>
         </div>
 
@@ -64,10 +66,11 @@
             <h1><?= $heroContent['title2'] ?></h1>
             <p class="texte-description"><?= $heroContent['description'] ?></p>
 
-            <button class="btn-reservation">
-                <?= $heroContent['button']['text'] ?>
-                <span class="btn-circle"><?= $heroContent['button']['circle'] ?></span>
-            </button>
+        <button class="btn-reservation" onclick="window.location.href='<?= $heroContent['button']['href'] ?>'">
+            <?= $heroContent['button']['text'] ?>
+            <span class="btn-circle"><?= $heroContent['button']['circle'] ?></span>
+        </button>
+
         </div>
         
         <div class="carousel-container">
@@ -100,8 +103,6 @@
                 </ul>
             </div>
         </div>
-
-
         <div class="col-4 h bg-red me-0">
             <div class="slider-wrapper">
                 <div class="slider-track d-flex align-items-center justify-content-center pt-5">
@@ -134,7 +135,7 @@
             <?php endforeach; ?>
         </div>
         <div class="col-4 d-flex align-items-center justify-content-center text-white text-center" style="height: 18%;">
-            <p style="font-size: 11px;">Flânez sur la Promenade des Bains, explorez les criques secrètes ou partez en mer depuis son port de plaisance. Saint-Raphaël, c'est la Côte d'Azur dans toute sa splendeur !</p>
+            <p style="font-size: 11px;"><?php echo $activitesContent["footDesc"] ?></p>
         </div>
     </div>
     <div class="localisation d-flex gap-5 align-items-center justify-content-center" id="localisation">
@@ -179,9 +180,9 @@
     </div>
     <div class="autreInfos">
         <div class="autreInfo d-flex flex-column align-items-center justify-content-center">
-            <div class="col-8 loko d-flex justify-content-between" style="height:40%">
+            <div class="col-8 d-flex justify-content-between" style="height:40%">
                 <?php foreach (array_slice($autreInfos, 0, 2) as $info): ?>
-                    <div class="col-6 loko masquer d-flex align-items-center justify-content-center position-relative" style="height:98%">
+                    <div class="col-6 masquer d-flex align-items-center justify-content-center position-relative" style="height:98%">
                         <img class="img-config-up" src="<?= $info['img'] ?>" alt="<?= $info['alt'] ?>">
                         <div class="contentAutreInfo position-absolute text-white">
                             <h4><?= $info['title1'] ?></h4>
@@ -193,9 +194,9 @@
                 <?php endforeach; ?>
             </div>
 
-            <div class="col-8 loko d-flex justify-content-between" style="height:50%">
+            <div class="col-8 d-flex justify-content-between" style="height:50%">
                 <?php foreach (array_slice($autreInfos, 2) as $info): ?>
-                    <div class="col-4 loko masquer d-flex align-items-center justify-content-center position-relative" style="height:98%">
+                    <div class="col-4 masquer d-flex align-items-center justify-content-center position-relative" style="height:98%">
                         <img class="img-config-down" src="<?= $info['img'] ?>" alt="<?= $info['alt'] ?>">
                         <div class="contentAutreInfo position-absolute text-white">
                             <h4><?= $info['title1'] ?></h4>
@@ -223,10 +224,31 @@
                 <span class="btn-circle-config"><?php echo $reserve["button"]["icon"]; ?></span>
             </button>
         </div>
-
     </div>
 
 
+    <!-- FOOT DE LA PAGE -->
+    <div class="footer d-flex flex-column align-items-center justify-content-center text-white">
+        <div class="col-12 d-flex align-items-center justify-content-center gap-5" style="height:85%">
+            <div class="col-5 d-flex align-items-center justify-content-end px-5" style="height:85%">
+                <img class="logo-footer" src="<?php echo $footer['logo']; ?>" alt="logo">
+            </div>
+            <div class="col-5 footer-content d-flex flex-column justify-content-center gap-2" style="height:85%">
+                <span class="text-contact"><?php echo $footer['contactTitle']; ?></span>
+                <div class="contact">
+                    <?php foreach($footer['contacts'] as $c): ?>
+                        <p>
+                            <img src="<?php echo $c['icon']; ?>" alt="Icon">
+                            <span><?php echo $c['text']; ?></span>
+                        </p>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+        <div class="droit-reserve col-12 d-flex flex-column align-items-center justify-content-center text-center" style="height:15%">
+            <?php echo $footer['copyright']; ?>
+        </div>
+    </div>
     <script src="assets/js/carousel.js" defer></script>
 </body>
 </html>
