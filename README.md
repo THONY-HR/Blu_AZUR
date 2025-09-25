@@ -16,3 +16,4 @@ blu-azur/
 └─ README.md
 
 LANGUAGE: PHP , HTML , JavaScript, CSS , BootStrap
+POUR ECRAN: 1440 x 847 px
