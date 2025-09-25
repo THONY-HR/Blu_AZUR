@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/accueil/headers.css">
+    <link rel="stylesheet" href="assets/css/accueil/head.css">
     <link rel="stylesheet" href="assets/css/accueil/apropos.css">
     <link rel="stylesheet" href="assets/css/accueil/activites.css">
     <link rel="stylesheet" href="assets/css/accueil/localisations.css">
@@ -43,7 +43,7 @@
                 </div>
                 <ul class="d-flex gap-5 list-unstyled mb-0 menu-items">
                     <?php foreach ($menuItems as $item): ?>
-                        <li><a href="<?= $item['href'] ?>"><?= $item['label'] ?></a></li>
+                        <li class="<?php echo $item['class'] ?>"><a href="<?= $item['href'] ?>"><?= $item['label'] ?></a></li>
                     <?php endforeach; ?>
                     <li>
                         <div class="menu-hamburger d-flex flex-column justify-content-between" style="height: 20px;">

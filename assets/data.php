@@ -8,10 +8,10 @@
 <?php
                                                                 // HEADER DATA
     $menuItems = [
-        ['href' => '#apropos', 'label' => 'A propos'],
-        ['href' => '#localisation', 'label' => 'Localisation'],
-        ['href' => '#activites', 'label' => 'Activités'],
-        ['href' => '#reserve', 'label' => 'Réservé']
+        ['class' => "",'href' => '#apropos', 'label' => 'A propos'],
+        ['class' => "",'href' => '#localisation', 'label' => 'Localisation'],
+        ['class' => "",'href' => '#activites', 'label' => 'Activités'],
+        ['class' => "lien-config",'href' => '#reserve', 'label' => 'Réservé']
     ];
 
     $socialIcons = [
