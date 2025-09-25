@@ -209,3 +209,14 @@
             ]
         ],
     ];
+
+
+    $reserve = [
+        "title" => "Réservations",
+        "description" => "<b>Offrez-vous un séjour inoubliable</b> dans l’un de nos appartements Blu Azur. Profitez d’un cadre exceptionnel, entre confort, détente et découvertes, au cœur de Saint-Raphaël.",
+        "button" => [
+            "text" => "Réservez dès maintenant votre séjour !",
+            "icon" => ">",   // ou une image si besoin
+            "class" => "btn-config btn-reservationL"
+        ]
+    ];

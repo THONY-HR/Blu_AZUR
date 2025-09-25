@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/accueil/activites.css">
     <link rel="stylesheet" href="assets/css/accueil/localisations.css">
     <link rel="stylesheet" href="assets/css/accueil/autreInformation.css">
+    <link rel="stylesheet" href="assets/css/accueil/reserve.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Blu Azur</title>
@@ -83,7 +84,7 @@
         </div>
     </div>
 
-    
+
     <!-- CORP DE LA PAGE -->
     <div class="apropos d-flex align-items-center" id="apropos" style="gap: 2rem;">
         <div class="propos col-7 h bg-red ms-auto d-flex flex-column justify-content-center align-items-start text-black p-5" style="height: 300px;">
@@ -213,7 +214,15 @@
             </div>
         </div>
     </div>
-    <div class="reserve">
+    <div class="reserve d-flex flex-column align-items-center justify-content-center text-white text-center" id="reserve">
+        <div class="reservcontent d-flex flex-column align-items-center justify-content-center text-white text-center gap-3">
+            <h1><?php echo $reserve["title"]; ?></h1>
+            <p><?php echo $reserve["description"]; ?></p>
+            <button class="<?php echo $reserve["button"]["class"]; ?>">
+                <?php echo $reserve["button"]["text"]; ?>
+                <span class="btn-circle-config"><?php echo $reserve["button"]["icon"]; ?></span>
+            </button>
+        </div>
 
     </div>
 

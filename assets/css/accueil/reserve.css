@@ -1,0 +1,40 @@
+.reserve{
+    height: 90vh;
+    background: linear-gradient(90deg, #4097FF 0%, rgba(115, 115, 115, 0) 100%),url("../../img/fond-reserve.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.reserve h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.reserve p{
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: 20px;
+}
+.reservcontent{
+    scale: 0.85;
+}
+.btn-config{
+    background-color: rgba(64, 151, 255, 1);
+    color: white;
+    font-weight: 900;
+    font-size: 13px;
+}
+.btn-circle-config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1.7px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    flex-shrink: 0;
+    scale: 0.5;
+}
