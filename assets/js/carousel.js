@@ -1,5 +1,9 @@
-// console.log("carousel_apropos.js chargé ✅");
-
+// <!--
+//     Par:
+//         HERINANTENAINA
+//         Rantonrinina Anthony
+//         +261 34 85 178 51
+// -->
 
 document.addEventListener('DOMContentLoaded', () => {
     const sliderTrack = document.querySelector('.slider-track');

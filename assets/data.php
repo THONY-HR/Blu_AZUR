@@ -1,3 +1,10 @@
+<!--
+    Par:
+        HERINANTENAINA
+        Rantonrinina Anthony
+        +261 34 85 178 51
+-->
+        
 <?php
                                                                 // HEADER DATA
     $menuItems = [
@@ -67,7 +74,9 @@
             "alt" => "Cuisine"
         ]
     ];
+
                                                                 // ACTIVITES DATA
+
     $activitesContent = [
         "titre1" => "Saint Raphaël, l'endroit parfait pour",
         "titre2" => "vivre la Côte d'Azur",
@@ -218,7 +227,7 @@
         "description" => "<b>Offrez-vous un séjour inoubliable</b> dans l’un de nos appartements Blu Azur. Profitez d’un cadre exceptionnel, entre confort, détente et découvertes, au cœur de Saint-Raphaël.",
         "button" => [
             "text" => "Réservez dès maintenant votre séjour !",
-            "icon" => ">",   // ou une image si besoin
+            "icon" => ">",
             "class" => "btn-config btn-reservationL"
         ]
     ];
