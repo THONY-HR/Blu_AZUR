@@ -6,7 +6,7 @@
 -->
         
 <?php
-                                                                // HEADER DATA
+                                                                // HEADE DATA
     $menuItems = [
         ['class' => "",'href' => '#apropos', 'label' => 'A propos'],
         ['class' => "",'href' => '#localisation', 'label' => 'Localisation'],

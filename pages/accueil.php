@@ -34,7 +34,7 @@
     </style>
 </head>
 <body>
-    <!-- ENTETE DE LA PAGE -->
+    <!-- ENTETE DE LA PAGE .. -->
     <div class="header">
         <div class="menu">
             <div class="d-flex justify-content-between align-items-center px-4 py-3 header-menu">

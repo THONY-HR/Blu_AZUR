@@ -4,7 +4,7 @@ REPOS GIT:
 
     - https://github.com/THONY-HR/Blu_AZUR.git
 
-METHODE DE LANCEMENT: Mettre le projet dans ... 
+METHODE DE LANCEMENT: Mettre le projet dans ....
 
     -Pour UwAmp:
 
